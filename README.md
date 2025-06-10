@@ -12,11 +12,16 @@ If you have questions about the rules of the game, you can click on "How to Play
 
 AI use: CS50 AI duck and Copilot were used in the making of the website.
 
-Copilot AI was used in creating the riddle questions only, it was not used for coding.
+Copilot AI was used in creating the riddle questions only, it was not used for writing code.
 
-The CS50 AI duck was used to provide syntax information, correct syntax and logic errors, and logic development for some functionalities.
+The CS50 AI Duck was used to provide syntax information, correct syntax and logic errors, and logic development for some functionalities.
+
+The CS50 AI Duck was used to write CSS styling.
+
+The CS50 AI Duck was not used in writing any Javascript code, only provided some logic and base syntax for writing. 
 
 Functionalities include: The logic/idea of using a second dictionary to search for a matching key in the riddle dictionary. 
-This was done to provide a relevant image output for each riddle, instead of images unrelated to the riddle. 
+Some event listener functions.
+CSS styling.
 
 All syntax used in Javascript, HTML, and CSS was provided by the CS50 AI Duck.
