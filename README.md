@@ -18,7 +18,7 @@ The CS50 AI Duck was used to provide syntax information, correct syntax and logi
 
 The CS50 AI Duck was used to write the majority of CSS styling.
 
-The CS50 AI Duck was not used in writing any Javascript code, only provided some logic and base syntax for writing. 
+The CS50 AI Duck was not used in writing any Javascript code, only provided some logic and syntax for writing. 
 
 Functionalities include: The logic/idea of using a second dictionary to search for a matching key in the riddle dictionary. 
 Some event listener functions.
