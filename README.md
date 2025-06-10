@@ -18,3 +18,4 @@ The CS50 AI duck was used to provide syntax information, correct syntax and logi
 
 Functionalities include: The logic/idea of using a second dictionary to search for a matching key in the riddle dictionary. 
 This was done to provide a relevant image output for each riddle, instead of images unrelated to the riddle. 
+All the syntax used in Javascript, HTML, and CSS was provided by the CS50 AI Duck.
