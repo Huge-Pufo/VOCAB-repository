@@ -14,7 +14,7 @@ AI use: CS50 AI duck and Copilot were used in the making of the website.
 
 Copilot was used in making the riddle questions only, it was not used for coding.
 
-The CS50 AI duck was used to correct syntax erros, logic errors, and logic development for some functionalities.
+The CS50 AI duck was used to provide syntax information, correct syntax and logic errors, and logic development for some functionalities.
 
 Functionalities include: The logic/idea of using a second dictionary to search for a matching key in the riddle dictionary. 
 This was done to provide a relevant image output for each riddle, instead of images unrelated to the riddle. 
