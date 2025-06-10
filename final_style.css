@@ -1,0 +1,160 @@
+/*organized in alphabetical order*/
+
+.attempts_style{
+  font-family: "Black Han Sans", sans-serif;
+  display:inline;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.black-han-sans-regular {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.black-han-sans-regular-title {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+}
+
+#body_id{
+    margin:0;
+    padding: 0;
+    background-color: #1D1D1D;
+}
+
+.box_container{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    padding:
+}
+
+.box_style{
+    width:500px;
+    height:60px;
+    border:4px solid #545454;
+    border-radius: 0.5rem;
+    margin: 3px;
+    text-align:center;
+    margin-top: 20px;
+}
+
+.button_style{
+    width: 100px;
+    height:60px;
+    border-radius: 0.5rem;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.center_class{
+    display:flex;
+    justify-content: center;
+}
+
+.correct{
+  background-color: green;
+}
+
+#correct_msg{
+  display: none;
+  text-align: center;
+  color: green;
+}
+
+.incorrect_msg{
+  display: none;
+  text-align: center;
+  color: red;
+}
+
+#hint_id
+{
+  font-size:20px;
+  justify-content: center;
+  color: #5B0374;
+  width: 80px;
+  height: 35px;
+}
+
+#home_button{
+  display: inline-block;
+  justify-content: center;
+  vertical-align: top;
+  width: 80px;
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: #5B0374;
+}
+
+.image_style{
+  width: 300px;
+  height: 220px;
+  border-radius: 0.5rem;
+  border: 3px solid white;
+  margin-bottom: 10px;
+}
+
+.incorrect{
+  background-color: red;
+}
+
+.invisible_style
+{
+  display:none;
+}
+
+#message_id{
+  display: none;
+  text-align:center;
+}
+
+#vertical_line{
+  width: 2px;
+  height: 680px;
+  display: inline-block;
+}
+
+.outfit_font {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display:flex;
+  color: white;
+  font-size: 20px;
+}
+
+#restart_id{
+  color:black;
+  font-weight: 500;
+  font-size: 18px;
+}
+#riddle_id{
+  color: yellow;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    width: 100%;
+    background-color: #1D1D1D;
+    color: white;
+    border: none;
+}

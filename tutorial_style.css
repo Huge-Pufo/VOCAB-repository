@@ -1,0 +1,73 @@
+.black-han-sans {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+#body_id{
+    background-color: #1D1D1D;
+}
+.centered{
+  display: flex;
+  justify-content: center;
+}
+
+#htp_container{
+    display: flex;
+    justify-content: center;
+}
+
+#list{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+    flex-direction: column;
+}
+
+.list_class{
+  margin-top:20px;
+  text-align: center;
+}
+
+#list_container{
+  display:flex;
+  justify-content: center;
+}
+
+.outfit-font{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+
+#return_button{
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: white;
+  border: 2px solid black;
+  border-radius:10px;
+  padding-top: 15px;
+  width: 220px;
+  height:70px;
+  color: #5B0374;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#return_container{
+  display:flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+#title_id{
+    font-size: 50px;
+    color: #5B0374;
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+}
+
+

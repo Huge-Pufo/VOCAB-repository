@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="final_style.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=WDXL+Lubrifont+TC&display=swap');
+            </style>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Outfit:wght@100..900&family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+
+        <title>Viddle</title>
+    </head>
+
+    <body id="body_id">
+        <div>
+            <a id="home_button" class ="black-han-sans-regular"href="https://symmetrical-space-potato-v6r5pvwrg66rfxx97-8080.app.github.dev/home_pg.html">Home</a>
+        </div>
+        <div id="title" class="black-han-sans-regular-title">
+            <h1>Viddle</h1>
+        </div>
+
+        <div id="attempts_container" class="center_class">
+            <h5 class="attempts_style">Attempts Left: </h5>
+            <h5 id="attempt_counter" class="attempts_style"></h5>
+        </div>
+
+        <div id="image_container" class="center_class invisible_style">
+            <img id="riddle_id_img" src="" class="image_style"></img>
+        </div>
+        <div class="center_class">
+            <button id="hint_id" class="black-han-sans-regular button_style">Hint</button>
+        </div>
+        <div>
+            <h2 id="riddle_id" class="center_class outfit_font"></h2>
+            <h2 id="message_id" class="outfit_font invisible_style">Try to guess!</h2>
+        </div>
+
+        <div class= "box_container">
+            <input id= "box_id" type="text" class="box_style black-han-sans-regular" maxlength="20"></input>
+        </div>
+        <div>
+             <h2 id="correct_msg" class="black-han-sans-regular">correct!</h2>
+        </div>
+        <a href=""></a>
+        <script>
+
+            riddle_dict = { "The faster you go the slower I get. I can't go backwards 'no matter' what.":"time",
+                            "What can fill a room but takes up no space?":"light",
+                            "The more you take out of me, the bigger I get. What am I?":"hole",
+                            "I’m full of holes but still hold liquids. What am I?":"sponge",
+                            "I fly without wings, I cry without eyes. Whenever I go, darkness flies. What am I?":"cloud",
+                            "You can catch me, but not throw me. What am I?":"cold",
+                            "I have keys and space but no room. You can enter, but not go in. What am I?":"keyboard",
+                          }
+
+            //Logic and idea behind this dictionary was provided by CS50 AI Duck
+            //Using matching keys, and using paths to images as values in order to display an image that matches the riddle.
+            img_dict = {"The faster you go the slower I get. I can't go backwards 'no matter' what.":"/images/sand_clock.webp",
+                        "What can fill a room but takes up no space?":"/images/empty_room.jpg",
+                        "The more you take out of me, the bigger I get. What am I?":"/images/hole.jpg",
+                        "I’m full of holes but still hold liquids. What am I?":"/images/ponga.png",
+                        "I fly without wings, I cry without eyes. Whenever I go, darkness flies. What am I?":"/images/cloud_hint.jpg",
+                        "You can catch me, but not throw me. What am I?":"/images/cold_hint.webp",
+                        "I have keys and space but no room. You can enter, but not go in. What am I?":"/images/keyboard_hint.jpg",
+                        }
+
+            key_list = Object.keys(riddle_dict)
+            rand_index = Math.floor(Math.random() * key_list.length)
+
+            riddle = key_list[rand_index]
+            answer = riddle_dict[riddle]
+            riddle_img = img_dict[riddle]
+
+            document.getElementById("riddle_id").innerHTML = riddle
+
+            document.getElementById("hint_id").addEventListener("click", function()
+            {
+                //Once the user presses the "hint" button, its invisible class will be removed and an image layout will be displayed.
+                document.getElementById("image_container").classList.remove("invisible_style")
+
+                //Then, an image that matches the corresponding key from the riddle dictionary will be displayed.
+                document.getElementById("riddle_id_img").setAttribute("src", riddle_img)
+            })
+
+            let attempts = 3;
+            document.getElementById("attempt_counter").innerHTML = attempts
+
+            //This event listener logic was provided by CS50 AI Duck
+            document.getElementById("box_id").addEventListener("keydown", function()
+            {
+                let user_input = (document.getElementById("box_id").value).toLowerCase()
+                document.getElementById("message_id").style.display="none"
+                document.getElementById("correct_msg").style.display="none"
+
+                document.getElementById("box_id").classList.remove("correct")
+                document.getElementById("box_id").classList.remove("incorrect")
+
+                if ((event.key == "Enter") && (attempts > 0))
+                {
+                    if (user_input != "")
+                    {
+                        attempts = attempts - 1
+                    }
+
+                    document.getElementById("attempt_counter").innerHTML = attempts
+                    if ((event.key == "Enter") && (user_input == (answer)))
+                    {
+                        document.getElementById("box_id").classList.add("correct")
+                        document.getElementById("correct_msg").style.display = "block"
+                    }
+                    else if (event.key == "Enter" && (user_input != (answer)))
+                    {
+                        document.getElementById("box_id").classList.add("incorrect")
+                        if ((user_input != "") && (user_input != answer))
+                        {
+                            document.getElementById("correct_msg").style.color = "red"
+                            document.getElementById("correct_msg").innerHTML = "wrong!"
+                            document.getElementById("correct_msg").style.display = "block"
+                        }
+                        else
+                        {
+                            document.getElementById("correct_msg").style.display = "none"
+                        }
+
+                    }
+                }
+
+                if ((user_input == "") && (event.key == "Enter") && (attempts > 0))
+                {
+                    document.getElementById("message_id").style.display="block"
+                }
+                if (attempts == 0)
+                {
+                    document.getElementById("title").style.display = "none"
+                    document.getElementById("attempts_container").innerHTML = "Good Try!"
+                    document.getElementById("attempts_container").classList.add("black-han-sans-regular")
+                    document.getElementById("attempts_container").style.color = "white"
+                }
+            })
+
+        </script>
+    </body>
+</html>
