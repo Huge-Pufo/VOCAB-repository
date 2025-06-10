@@ -109,6 +109,7 @@
                     if ((event.key == "Enter") && (user_input == (answer)))
                     {
                         document.getElementById("box_id").classList.add("correct")
+                        document.getElementById("correct_msg").innerHTML = "Correct!"
                         document.getElementById("correct_msg").style.display = "block"
                     }
                     else if (event.key == "Enter" && (user_input != (answer)))
