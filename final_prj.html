@@ -109,7 +109,7 @@
                     document.getElementById("attempt_counter").innerHTML = attempts
                     if ((event.key == "Enter") && (user_input == (answer)))
                     {
-                        document.getElementById("box_id").classList.add("correct")
+                        document.getElementById("correct_msg").style.color ="green"
                         document.getElementById("correct_msg").innerHTML = "Correct!"
                         document.getElementById("correct_msg").style.display = "block"
                     }
@@ -136,7 +136,7 @@
                 if (attempts == 0)
                 {
                     document.getElementById("title").style.display = "none"
-                    document.getElementById("attempts_container").innerHTML = "Good Try!"
+                    document.getElementById("attempts_container").innerHTML = "Good Game!"
                     document.getElementById("attempts_container").classList.add("black-han-sans-regular")
                     document.getElementById("attempts_container").style.color = "white"
                 }
