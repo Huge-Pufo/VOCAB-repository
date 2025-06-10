@@ -9,3 +9,5 @@ If you think the riddle is too hard to solve, you can click the "hint" button. T
 To play the game press the "play" button.
 
 If you have questions about the rules of the game, you can click on "How to Play" and the page will provide information about the game.
+
+#AI use
