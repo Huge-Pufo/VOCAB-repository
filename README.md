@@ -16,7 +16,7 @@ Copilot AI was used in creating the riddle questions only, it was not used for w
 
 The CS50 AI Duck was used to provide syntax information, correct syntax and logic errors, and logic development for some functionalities.
 
-The CS50 AI Duck was used to write CSS styling.
+The CS50 AI Duck was used to write the majority of CSS styling.
 
 The CS50 AI Duck was not used in writing any Javascript code, only provided some logic and base syntax for writing. 
 
