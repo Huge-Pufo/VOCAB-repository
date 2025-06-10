@@ -11,5 +11,7 @@ To play the game press the "play" button.
 If you have questions about the rules of the game, you can click on "How to Play" and the page will provide information about the game.
 
 AI use: CS50 AI duck and Copilot were used in the making of the website.
+
 Copilot was used in making the riddle questions only, it was not used for coding.
+
 The CS50 AI duck was used to correct syntax erros, logic errors, and for some logic development.
