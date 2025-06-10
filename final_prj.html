@@ -91,7 +91,9 @@
             //This event listener logic was provided by CS50 AI Duck
             document.getElementById("box_id").addEventListener("keydown", function()
             {
-                let user_input = (document.getElementById("box_id").value).toLowerCase()
+                let raw_input = (document.getElementById("box_id").value).toLowerCase()
+                let user_input = raw_input.trim()
+                
                 document.getElementById("message_id").style.display="none"
                 document.getElementById("correct_msg").style.display="none"
 
@@ -125,7 +127,6 @@
                         {
                             document.getElementById("correct_msg").style.display = "none"
                         }
-
                     }
                 }
 
