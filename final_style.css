@@ -157,4 +157,6 @@
     background-color: #1D1D1D;
     color: white;
     border: none;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
+
